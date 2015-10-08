@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/disable"
+    android:layout_height="match_parent"
+    tools:context="com.game.quiz.QuizActivity">
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="question"
+        android:padding="5dp"
+        android:background="#cc0000"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@id/error"
+        android:id="@+id/pager"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/index"
+        />
+
+    <TextView
+
+        android:id="@+id/index"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:gravity="center"/>
+
+
+
+</RelativeLayout>
